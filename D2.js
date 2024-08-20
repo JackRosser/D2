@@ -50,7 +50,15 @@ if (first + second === 8 || first - second === 8) {
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let shopping = [55, 10, 80, 67, 91];
+let delivery = 10;
+let totalShoppingCart = shopping[0] + shopping[1] + shopping[2] + shopping[3] + shopping[4] + delivery;
+console.log(totalShoppingCart + " prima");
+if (shopping[0] + shopping[1] + shopping[2] + shopping[3] + shopping[4] > 50) {
+  delivery = 0;
+  totalShoppingCart = shopping[0] + shopping[1] + shopping[2] + shopping[3] + shopping[4] + delivery;
+  console.log(totalShoppingCart + " dopo");
+}
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
