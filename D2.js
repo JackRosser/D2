@@ -1,3 +1,8 @@
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(numbers, numbers.length);
+const result = numbers[10] % 5;
+console.log(result);
+
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
@@ -8,13 +13,17 @@
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+if (numbers[0] !== 5) {
+  console.log("Exercise 2: not equal");
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+if (numbers[10] % 5 === 0) {
+  console.log("Exercise 3: perfectly dibisible by 5");
+}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
@@ -76,10 +85,10 @@
 */
 
 const me = {
-  name: 'John',
-  lastName: 'Doe',
-  skills: ['javascript', 'html', 'css'],
-}
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"]
+};
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
