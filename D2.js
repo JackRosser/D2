@@ -131,7 +131,7 @@ if (numbers[6] % 2 === 0) {
 */
 
 let val = 7;
-if (val < 10) {
+if (val < 10 && val >= 5) {
   console.log("Meno di 10");
 } else if (val < 5) {
   console.log("Meno di 5");
