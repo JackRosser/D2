@@ -1,13 +1,17 @@
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 console.log(numbers, numbers.length);
-const result = numbers[10] % 5;
-console.log(result);
 
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let num1 = 17;
+let num2 = 18;
+if (num2 > num1) {
+  console.log("il maggiore tra " + num1 + " e " + num2 + " è " + num2);
+} else {
+  console.log("il maggiore tra " + num1 + " e " + num2 + " è " + num1);
+}
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
