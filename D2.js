@@ -65,7 +65,30 @@ if (shopping[0] + shopping[1] + shopping[2] + shopping[3] + shopping[4] > 50) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let newdelivery = 10;
+let totalShoppingCartBlackFriday =
+  // prettier-ignore
+  (shopping[0] - (shopping[0] * 20) / 100) +
+  (shopping[1] - (shopping[1] * 20) / 100) +
+  (shopping[2] - (shopping[2] * 20) / 100) +
+  (shopping[3] - (shopping[3] * 20) / 100) +
+  (shopping[4] - (shopping[4] * 20) / 100) + newdelivery;
+console.log(totalShoppingCartBlackFriday, "prima");
+// prettier-ignore
+if  ((shopping[0] - (shopping[0] * 20) / 100) +
+(shopping[1] - (shopping[1] * 20) / 100) +
+(shopping[2] - (shopping[2] * 20) / 100) +
+(shopping[3] - (shopping[3] * 20) / 100) +
+(shopping[4] - (shopping[4] * 20) / 100) > 50) {
+  newdelivery = 0;
+  totalShoppingCartBlackFriday =
+  // prettier-ignore
+  (shopping[0] - (shopping[0] * 20) / 100) +
+  (shopping[1] - (shopping[1] * 20) / 100) +
+  (shopping[2] - (shopping[2] * 20) / 100) +
+  (shopping[3] - (shopping[3] * 20) / 100) +
+  (shopping[4] - (shopping[4] * 20) / 100) + newdelivery;}
+console.log(totalShoppingCartBlackFriday, "dopo");
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -73,7 +96,9 @@ if (shopping[0] + shopping[1] + shopping[2] + shopping[3] + shopping[4] > 50) {
   Alla fine mostra il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const crescent = [16, 55, 35];
+crescent.sort(); // Non è valido per i numeri ma al momento non sappiamo ancora come fare
+console.log(crescent);
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
