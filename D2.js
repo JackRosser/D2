@@ -33,8 +33,17 @@ if (numbers[10] % 5 === 0) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+numbers.push(18);
+let first = numbers[8];
+let second = numbers[10];
+if (first === 8 || second === 8) {
+  console.log("Exercise 4 - Almeno un dei due è uguale a 8");
+}
+if (first + second === 8 || first - second === 8) {
+  console.log("Exercise 4 - La loro addizione/sottrazione è uguale a 8");
+} else {
+  console.log("Exercise 4 - la loro addizione/sottrazione è diversa da 8");
+}
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
